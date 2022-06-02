@@ -3,8 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
+    <style>
+        .titleItem{
+            display: flex;
+            margin: 8px 0 0 8px;
+        }
+        .titleItem input{
+            box-sizing: border-box;
+            display: block;
+        }
+        .titleItem div:nth-child(1) {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .titleItem div:nth-child(2) ,.titleItem>input{
+            width: 216px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .titleIntroMsg{
+            display: flex;
+        }
+        .classInput {
+            background: url("./ico-user-info1.png") no-repeat right;
+            background-size: 20px 20px;
+            background-position: 180px 3px;
+        }
+    </style>
 </head>
 <body>
 
+
+<div>
+    <h1>Unified Modeling Language Theory Test</h1>
+    <div class="titleIntroMsg">
+        <div>
+            <div class="titleItem">
+                <div>Test&nbsp;Subject:</div>
+                <div>Unified Modeling Language</div>
+            </div>
+            <div class="titleItem ">
+                <div>Class:</div>
+                <input class="classInput" type="text" value="001">
+            </div>
+        </div>
+        <div>
+            <div class="titleItem">
+                <div>Time:</div>
+                <div>Unified Modeling Language</div>
+            </div>
+            <div class="titleItem">
+                <div>Student ID:</div>
+                <input type="text" value="Class 1">
+            </div>
+        </div>
+        <div>
+            <div class="titleItem">
+                <div style="width: 80px">Score:</div>
+                <div>100</div>
+            </div>
+            <div class="titleItem">
+                <div>Name:</div>
+                <input type="text" value="Yun Chen">
+            </div>
+        </div>
+    </div>
+
+    <h1>1、Fill in the blanks(5 points per space,20 points total)</h1>
+
+    <div>
+        <ol>
+            <li style="margin-bottom: 10px">
+                The full name of UML in Chinese is:
+                <input style="width: 140px;height: 30px" value="Unified Modeling Language">
+            </li>
+            <li>
+                The most prominent feature of the object is
+                <input style=" width: 180px;height: 30px" value="Encapsulation">
+                <input style="width: 180px;height: 30px" value="Inheritance">
+                <input style=" width: 180px;height: 30px" value="Polymorphism">
+            </li>
+        </ol>
+    </div>
+
+    <h1>2、Multiple choice question(10 points per space,20 points total)</h1>
+
+    <div>
+        <ol>
+            <li>
+                The relationship between UML and software engineering is:
+                <p><input type="radio" name="2-1" value="UML is software engineering">(A)UML is software engineering
+                <br><input type="radio" name="2-1"
+                           value="UML participates in several stages of the software development process in software engineering" checked>(B)UML participates in several stages of the software development process in software engineering
+                <br><input type="radio" name="2-1" value="UML has nothing to do with software engineering">(C)UML has nothing to do with software engineering
+                <br><input type="radio" name="2-1" value="UML is part of software engineering">(D)UML is part of software engineering
+                </p>
+            </li>
+            <li>
+                Java language support:
+                <p><input type="radio" name="2-2" value="Single inheritance" checked>(A)Single inheritance
+                    <br><input type="radio" name="2-2" value="Multiple inheritance">(B)Multiple inheritance
+                    <br><input type="radio" name="2-2" value="Single inheritance and multiple inheritance support">(C)Single inheritance and multiple inheritance support
+                    <br><input type="radio" name="2-2" value="Single inheritance and multiple inheritance are not supported">(D)Single inheritance and multiple inheritance are not supported
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+    <h1>3、Multiple choice(10 points per space,20 points total)</h1>
+
+    <div>
+        <ol>
+            <li>
+                The granularity of the use case is divided into the following there:
+                <p><input type="checkbox" checked name="3-1" value="Overview level">(A)Overview level
+                    <br><input type="checkbox" checked name="3-1" value="Demand level">(B)Demand level
+                    <br><input type="checkbox" name="3-1" value="User target level">(C)User target level
+                    <br><input type="checkbox" checked name="3-1" value="Sub-function level">(D)Sub-function level
+                </p>
+            </li>
+            <li>
+                Java language support:
+                <p><input type="checkbox" checked name="3-2" value="Name">(A)Name
+                    <br><input type="checkbox" checked name="3-2" value="Attribute">(B)Attribute
+                    <br><input type="checkbox" checked name="3-2" value="Operation">(C)Operation
+                    <br><input type="checkbox" name="3-2" value="Function">(D)Function
+                </p>
+            </li>
+        </ol>
+    </div>
+
+    <h1>4、True or False(10 points per space,20 points total)</h1>
+    <div>
+        <ol>
+            <li>
+                Use case diagrams are only used to communicate and communicate with customers to determine demand。
+                <input type="radio" name="4-1" value="true">√
+                <input type="radio" checked name="4-1" value="false">x
+            </li>
+            <li>
+               In the state diagram,the termination state allows any number of multiples in a state diagram。
+                <input type="radio"checked name="5-1" value="true">√
+                <input type="radio" name="5-1" value="false">x
+            </li>
+        </ol>
+    </div>
+
+    <h1>5、Short answer question(20 points per space,20 points total)</h1>
+    <div>
+        <ol>
+        <li>
+            Briefly describe what the model is and how it behaves?
+            <p>
+                <textarea id="t" style="width: 700px;height: 130px" minlength="9">
+                    A model is a simplification and abstraction of the real world. A4 model is an expression of the system,process, thing or concept of research. can be a physical entity; can be a certain graphic,; or a mathematicalexpression.
+                </textarea>
+            </p>
+        </li>
+        </ol>
+    </div>
+</div>
 </body>
 </html>
